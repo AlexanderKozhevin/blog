@@ -71,7 +71,7 @@ body {
     width: 50%;
     height: 100%;
     overflow: auto;
-    background-image: url(/images/back2.jpg);
+    background-image: url(images/back2.jpg);
     background-size: auto 100%;
     float: left; }
     @media (max-width: 600px) {
