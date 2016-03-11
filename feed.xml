@@ -3,27 +3,38 @@
   <channel>
     <title>Alexander Kozhevin</title>
     <description></description>
-    <link>http://alexanderkozhevin.github.io/blog/</link>
-    <atom:link href="http://alexanderkozhevin.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Mar 2016 04:07:07 +0300</pubDate>
-    <lastBuildDate>Wed, 09 Mar 2016 04:07:07 +0300</lastBuildDate>
+    <link>http://alexanderkozhevin.github.io//</link>
+    <atom:link href="http://alexanderkozhevin.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 12 Mar 2016 01:18:12 +0300</pubDate>
+    <lastBuildDate>Sat, 12 Mar 2016 01:18:12 +0300</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
         <title>Polymath project</title>
-        <description>&lt;center&gt;&lt;h1&gt;Let&#39;s make it rock ! ! !&lt;/h1&gt;&lt;/center&gt;
-
-&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+        <description>&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
 
 &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/images/blog/post1/space.jpg&quot; style=&quot;width: 100%;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Mar 2016 00:00:00 +0300</pubDate>
-        <link>http://alexanderkozhevin.github.io/blog/2016/03/03/polymath-project.html</link>
-        <guid isPermaLink="true">http://alexanderkozhevin.github.io/blog/2016/03/03/polymath-project.html</guid>
+        <link>http://alexanderkozhevin.github.io//2016/03/03/polymath-project.html</link>
+        <guid isPermaLink="true">http://alexanderkozhevin.github.io//2016/03/03/polymath-project.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hacker project</title>
+        <description>&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Mar 2016 00:00:00 +0300</pubDate>
+        <link>http://alexanderkozhevin.github.io//2016/03/03/hacker-space.html</link>
+        <guid isPermaLink="true">http://alexanderkozhevin.github.io//2016/03/03/hacker-space.html</guid>
         
         
       </item>
