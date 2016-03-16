@@ -89,7 +89,8 @@ body {
       height: 128px;
       overflow: hidden;
       font-weight: 300;
-      opacity: 0.8; }
+      opacity: 0.8;
+      line-height: 150%; }
     .page-listing .card .date {
       text-align: right;
       font-weight: 300; }
@@ -107,24 +108,82 @@ body {
   margin-top: 128px;
   font-weight: 300; }
 
-.post {
+.page-post {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; }
-  .post__title {
-    height: 50vh;
-    width: 100%;
+  align-items: center;
+  min-height: 100vh; }
+  .page-post .post {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center; }
+    .page-post .post__title {
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      font-weight: 100; }
+    .page-post .post__content {
+      width: 100%;
+      max-width: 100%;
+      font-weight: 300;
+      padding-bottom: 250px;
+      text-align: center; }
+    .page-post .post .text-content {
+      margin-top: 150px;
+      margin-bottom: 150px;
+      display: inline-block;
+      width: 800px;
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+      text-align: left;
+      font-size: 18px;
+      line-height: 170%; }
+      .page-post .post .text-content a {
+        color: black; }
+    .page-post .post .caption {
+      font-size: 40px;
+      font-weight: 100;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center; }
+  .page-post .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    font-size: 50px;
-    font-weight: 300; }
-  .post__content {
-    width: 800px;
+    width: 1000px;
     max-width: 100%;
+    max-width: 100%;
+    height: 128px;
     font-weight: 300; }
+    .page-post .heading__back {
+      margin-left: 50px;
+      color: black;
+      text-decoration: none;
+      opacity: 0.7; }
+      .page-post .heading__back:hover {
+        text-decoration: underline; }
+    .page-post .heading__menu {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      .page-post .heading__menu a {
+        margin-left: 30px;
+        opacity: 0.7;
+        color: black;
+        text-decoration: none; }
+        .page-post .heading__menu a:hover {
+          text-decoration: underline; }
 
 .page-alexander {
   display: flex;

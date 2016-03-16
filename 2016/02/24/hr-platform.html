@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HR-platform</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="http://polymath-play.xyz/css/main.css">
+</head>
+
+
+  <body>
+
+  <div class="page-post">
+
+  <div class="heading">
+    <a class="heading__back" href="javascript:history.back()"> - Go Back</a>
+    <div class="heading__menu">
+      <a href="/index.html">Blog</a>
+      <a href="/alexander.html"> Alexander</a>
+    </div>
+  </div>
+
+  <article class="post">
+
+    <div class="post__title">HR-platform</div>
+
+    <div class="post__content">
+      <p><img src="http://polymath-play.xyz/images/blog/post1/main.jpg" style="width: 100%;opacity: 0.85;" /></p>
+
+<div class="text-content">
+
+  HR - platform is a quite simple tool to organize &amp; manage contacts, job applications and events.
+  The idea was suggested from a friend of mine back in 2014. But only 1.5 years later it was completed.
+  We just delayed a thing. But 6 months ago when I quit a regular job I decided to take matters into own hands.
+  The development process itself wasn't really straight. I played with technologies and libraries.
+  When I got the first version of it I decided to rewrite it completely. Cause it wasn't really friendly.
+  But finally in two months I made it about the same I wanted it.<br />
+  And there are few interesting things I want to share with you.
+
+
+</div>
+
+<div class="caption">Interface in 1 Minute</div>
+
+<iframe src="https://player.vimeo.com/video/159079178?title=0&amp;byline=0&amp;portrait=0" width="800" height="450" style="max-width:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<div class="text-content">
+  Interface itself is based on material design. I guess, it's a great solution for small projects and startups. Cause minus one huge headache is taken away. <br /><br /> <a href="https://material.angularjs.org/latest/">Angular Material</a> is used within this project. It has number of primary elements and very probably it's more than enough. Generally it feels like a medium quality lego-constructor. Excellent for small apps, so-so for average and difficult for large ones.
+</div>
+
+<div class="caption">Front-end architecture</div>
+
+<div class="text-content">
+  Application is based on Angular 1.4.8.
+
+  ```javascript
+  app.directive("rowWrapFill", function($compile){
+  	return {
+      restrict: "A",
+    	scope: {},
+      link: function(scope, elm, attrs){
+
+        if (scope.$parent.$last){
+
+  ```
+
+</div>
+
+    </div>
+
+  </article>
+
+</div>
+
+  
+  </body>
+
+</html>
