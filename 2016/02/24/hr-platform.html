@@ -55,25 +55,106 @@
 <div class="caption">Front-end architecture</div>
 
 <div class="text-content">
-  Application is based on Angular 1.4.8.
 
-  ```javascript
-  app.directive("rowWrapFill", function($compile){
-  	return {
-      restrict: "A",
-    	scope: {},
-      link: function(scope, elm, attrs){
-
-        if (scope.$parent.$last){
-
-  ```
+  <img src="http://polymath-play.xyz/images/blog/post1/front.png" style="width: 200px;height: 400px;opacity: 0.85; float: left;margin-right: 30px;" />
+  Application is based on Angular 1.4.8, Angular-Material. Thanx to <a href="https://twitter.com/tenphi">Andrey Yamanov</a> I decided to use component approach in conjunction with default one - when  all the files are split by type and view logic. It helped me to isolate elements
+  with really complex logic. The same way I act in controllers. I try to hide all the routine code in factories and concentrate all the logic in controllers as much as it possible. Even charts configurations are moved to factories.
+  <br />
+  <br />
+  Project  builder is Gulp. And pretty much syntax sugar is used - Jade, Coffee-Script, SCSS.
+  To simplify browser extensions support I use <a href="http://bourbon.io/"> bourbon</a>, a framework not a drink.
+  <br /> Below you can see style directory tree.
 
 </div>
+
+<div style="text-align: left; font-size: 13px;display: inline-block;">
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">├── elements  - Everything that is used more than once
+│   ├── _avatar.scss
+│   ├── _chart_tooltip.scss
+│   ├── _gallery_item.scss
+│   └── _loader.scss
+├── modules - Some basic things - colors, spaces, fonts etc
+│   ├── _animation.scss
+│   ├── _colors.scss
+│   ├── _fonts.scss
+│   ├── _media.scss
+│   ├── _overload.scss
+│   └── _space.scss
+├── sections - SCSS main code split by view
+│   ├── _landing.scss
+│   ├── _login.scss
+│   ├── _profile.scss
+│   └── admin
+│       ├── _admin_header.scss
+│       ├── _main_bids.scss
+│       ├── _main_events.scss
+│       ├── _main_jobs.scss
+│       ├── _main_statistics.scss
+│       ├── _main_workers.scss
+│       ├── bids
+│       │   └── _list.scss
+│       ├── events
+│       │   ├── _editor.scss
+│       │   └── _list.scss
+│       ├── jobs
+│       │   ├── _editor.scss
+│       │   └── _list.scss
+│       ├── snippets
+│       │   ├── _worker_extended_search.scss
+│       │   └── _worker_quick_view.scss
+│       ├── statistics
+│       │   ├── _chart_main.scss
+│       └── workers
+│           ├── _editor.scss
+│           └── _list.scss
+└── style.scss</code></pre></figure>
+
+
+</div>
+
+<div class="caption" style="margin-top: 150px;">Back-end architecture</div>
+
+<p><img src="http://polymath-play.xyz/images/blog/post1/sails.jpg" style="width: 100%;opacity: 0.85;" /></p>
+
+<div class="text-content">
+
+  I guess Sails.js is my favorite node.js framework. It's easy to use, easy to customize. And it has a number of 3rd party things which makes it even better. Like - Waterline ORM. In conjunction with Restangular it makes server communication just effortless.
+  Currently MongoDB for common data and Redis as a session storage are used.
+  <br /> I prefer to write methods in Coffee-Script since sails has build-in support.
+  <br /><br /> For images storage I use S3Amazon for which sails has adapter as also!
+
+  <br /><br />
+  Our platform has integrated statistics. Currently it collects page visits data. But technically we gather almost any kind of data since we use Mixpanel. Front-end application has angular Mixpanel library which allows to send statistics about events, clicks, orders etc. And we can easily select which ones we would like to have and which are not. Of course statistics is available only in admin panel via server api. Last one communicate with Mixpanel service itself.
+
+  <br /><br />
+  I installed and configured NGINX to be able to serve two apps, which attached to domain and subdomain.
+  Application has client side - where people can apply the job. And the admin panel where all these applications and contacts are stored.
+  And other very important nginx role - is to serve gzip files. All js libraries weights about 700Kb and about the same is css libraries.
+  So after compression it weights about 220Kb. 3X compression, not bad, ha!
+
+  <br />
+  <br />
+  <div style="width: 100%; text-align:center;">
+    <img src="http://polymath-play.xyz/images/blog/post1/ansible.png" style="width: 200px;opacity: 0.85;" />
+  </div>
+  <br />
+  Back-end architecture is lifted on VPS provided by Vscale.io. Since we dont't really know business model, it will be handy to have a script which deploys blank application on new server. So I decided to play with <a href="https://github.com/ansible/ansible"> Ansible </a> which is considered to be one of the best automation tools of nowadays.
+
+</div>
+
+<div class="caption">Thanx for reading!</div>
 
     </div>
 
   </article>
 
+</div>
+
+
+
+<div class="footer">
+  &copy; 2016 Alexander Kozhevin
 </div>
 
   
